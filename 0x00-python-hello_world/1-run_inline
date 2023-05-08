@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "${PYCODE}" > line.py & python3.8 line.py
