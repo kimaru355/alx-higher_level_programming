@@ -4,12 +4,15 @@ def safe_print_list(my_list=[], x=0):
     if my_list != [] and x != 0:
         a = 0
         for i in my_list:
-            if a == x:
-                break
             print_int(i)
             a += 1
+            if a == x:
+                break
         print()
         return a
+    else:
+        print()
+        return 0
 
 
 def print_int(i):
@@ -21,13 +24,13 @@ def print_int(i):
 
 def print_float(i):
     try:
-        print("{:f}".format(i), end="")
+        print("{:f}".format(i).rstrip('0').rstrip('.'), end="")
     except ValueError:
         print_str(i)
 
 
 def print_str(i):
     try:
-        print("{:s".format(i), end="")
+        print("{:s}".format(i), end="")
     except ValueError:
         print("", end="")
