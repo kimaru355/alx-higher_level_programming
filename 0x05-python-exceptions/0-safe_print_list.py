@@ -15,19 +15,19 @@ def safe_print_list(my_list=[], x=0):
 def print_int(i):
     try:
         print("{:d}".format(i), end="")
-    except TypeError:
+    except ValueError:
         print_float(i)
 
 
 def print_float(i):
     try:
         print("{:f}".format(i), end="")
-    except TypeError:
+    except ValueError:
         print_str(i)
 
 
 def print_str(i):
     try:
         print("{:s".format(i), end="")
-    except TypeError:
+    except ValueError:
         print("", end="")
