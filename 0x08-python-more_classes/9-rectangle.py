@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-This module is composed by a class that defines a Rectangle
+This module is composed by the class that defines a Rectangle
 """
 
 
 class Rectangle:
-    """ Class that defines a rectangle """
+    """ Class that defines the rectangle """
 
     number_of_instances = 0
     print_symbol = "#"
