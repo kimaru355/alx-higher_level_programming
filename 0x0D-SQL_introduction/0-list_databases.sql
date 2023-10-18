@@ -1,2 +1,2 @@
-/* list all database */s
+/* list all database */
 SHOW DATABASES;
